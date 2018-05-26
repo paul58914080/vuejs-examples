@@ -2,7 +2,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '../../components/helloworld/HelloWorld.vue'; // @ is an alias to /src
+import HelloWorld from '@/components/helloworld/HelloWorld.vue'; // @ is an alias to /src
 
 @Component({
   components: {
@@ -11,3 +11,5 @@ import HelloWorld from '../../components/helloworld/HelloWorld.vue'; // @ is an 
 })
 export default class Home extends Vue {}
 </script>
+<style scoped="scss" src="./home.scss">
+</style>
