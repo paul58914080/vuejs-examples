@@ -1,10 +1,18 @@
 <template>
     <div id="app">
-        <div id="nav">
-            <router-link to="/">Home</router-link>
-            |
-            <router-link to="/about">About</router-link>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">Vue.js examples</a>
+            <div class="collapse navbar-collapse ml-3">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <router-link to="/">Home</router-link>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <router-link to="/about">About</router-link>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <router-view/>
     </div>
 </template>
@@ -12,16 +20,20 @@
 <style lang="scss">
     @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+    html, body {
+        height: 100%;
+    }
+
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
+        height: 100%;
     }
 
-    #nav {
-        padding: 30px;
+    .nav-item {
         a {
             font-weight: bold;
             color: #2c3e50;
