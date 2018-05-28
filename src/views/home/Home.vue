@@ -11,5 +11,5 @@ import HelloWorld from '@/components/helloworld/HelloWorld.vue'; // @ is an alia
 })
 export default class Home extends Vue {}
 </script>
-<style scoped="scss" src="./home.scss">
+<style lang="scss" scoped="scss" src="./home.scss">
 </style>
