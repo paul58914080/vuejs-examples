@@ -18,14 +18,14 @@
 </template>
 
 <style lang="scss">
-    @import '../node_modules/bootstrap/scss/bootstrap.scss';
+    @import 'styles/styles.scss';
 
     html, body {
         height: 100%;
     }
 
     #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        font-family: $font-family;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
