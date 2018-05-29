@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/helloworld/HelloWorld.vue'; // @ is an alias to /src
+import Alerts from '@/components/alerts/Alerts.vue';
 
 Vue.use(Router);
 
@@ -8,8 +8,13 @@ export default new Router({
     mode: 'history',
     routes: [
         {
-            path: '/example1',
-            component: HelloWorld,
+            path: '/alerts',
+            name: 'Alerts',
+            component: Alerts,
+        },
+        {
+            path: '*',
+            redirect: '/alerts',
         },
     ],
 });

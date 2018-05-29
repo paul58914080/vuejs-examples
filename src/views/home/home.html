@@ -2,14 +2,11 @@
     <div class="sidebar">
         <ul>
             <li class="nav-item">
-                <router-link to="/example1">Example 1</router-link>
-            </li>
-            <li class="nav-item">
-                <router-link to="/example2">Example 2</router-link>
+                <router-link to="/alerts">Example 1</router-link>
             </li>
         </ul>
     </div>
     <div class="content" id="homeContent">
-       <router-view></router-view>
+       <router-view default="{name: 'Alerts'}"></router-view>
     </div>
 </div>
