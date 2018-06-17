@@ -1,15 +1,14 @@
 <template src="./home.html">
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/helloworld/HelloWorld.vue'; // @ is an alias to /src
+    import { Component, Vue } from 'vue-property-decorator';
+    import router from './home-route';
 
-@Component({
-  components: {
-    HelloWorld,
-  },
-})
-export default class Home extends Vue {}
+    @Component({
+        router,
+    })
+    export default class Home extends Vue {
+    }
 </script>
 <style lang="scss" scoped="scss" src="./home.scss">
 </style>
